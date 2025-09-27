@@ -18,11 +18,11 @@
       margin-bottom: 20px;
     }
     p {
-      max-width: 400px;
+      max-width: 500px;
       margin: 0 auto 20px;
       line-height: 1.6;
     }
-    a {
+    a.button {
       background: #ffd700;
       color: #000;
       padding: 15px 25px;
@@ -32,13 +32,20 @@
       display: inline-block;
       margin-top: 20px;
     }
-    a:hover {
+    a.button:hover {
       background: #ffea00;
     }
     footer {
       margin-top: 50px;
       color: #888;
       font-size: 12px;
+    }
+    /* Sección de información */
+    #info {
+      margin-top: 80px;
+      padding: 40px 20px;
+      background: #111;
+      border-top: 2px solid #ffd700;
     }
   </style>
 </head>
@@ -48,9 +55,26 @@
     El token de las leyendas. Una memecoin que une la pasión por el fútbol
     con el universo cripto.
   </p>
-  <a href="#">Únete a la galaxia 🚀</a>
+  <!-- Botón que salta a la sección de información -->
+  <a href="#info" class="button">Únete a la galaxia 🚀</a>
+
+  <!-- Nueva sección de información -->
+  <section id="info">
+    <h2>Información del Proyecto</h2>
+    <p>
+      $GALÁCTICOS es una iniciativa comunitaria para los fans del fútbol y
+      la innovación blockchain. Aquí compartiremos noticias, actualizaciones
+      y oportunidades para participar.
+    </p>
+    <p>
+      Próximamente podrás reclamar tokens de prueba, participar en sorteos y
+      mucho más. ¡Mantente atento!
+    </p>
+  </section>
+
   <footer>
     © 2025 $GALÁCTICOS – Proyecto comunitario, sin afiliación oficial
   </footer>
 </body>
 </html>
+
